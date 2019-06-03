@@ -1,0 +1,447 @@
+html,body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #000000;
+	background: #FFFFFF;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding-bottom: 30px;
+}
+li{
+	list-style: none;
+}
+a{
+	display: block;
+}
+/*-------------------banner 开始--------------*/
+#banner{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+#banner .mui-slider-item{
+	font-size: 14px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    white-space: normal;
+}
+#banner .mui-slider-item img{
+	width: 100%;
+	display: block;
+}
+.mui-slider-indicator{
+	position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background: 0 0;
+}
+/*---------------------项目展示-----------------*/
+.main{
+    background: #FFFFFF;
+    padding: 0 12px 30px 12px;
+}
+.main h1{
+	margin: 20px 0px;
+    height: 54px;
+    line-height: 54px;
+    position: relative;
+    text-align: center;
+}
+.main h1:before{
+	content: '';
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+.main h1 span{
+	display: block;
+    width: 150px;
+    margin: 0 auto;
+    height: 54px;
+    font-size: 30px;
+    color: #333;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -75px;
+    background: #FFFFFF;
+}
+.main >div{
+	margin-top: 15px;
+}
+.main >div h2{
+	margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.main >div h2 a{
+	font-size: 26px;
+    color: #333333;
+}
+.main >div ul li{
+	width: 100%;
+	margin-top: 10px;
+}
+.main >div ul li i{
+	width: 100%;
+	overflow: hidden;
+}
+.main >div ul li i img{
+	width:100%;
+	display: block;
+}
+.main >div .list{
+	background: #EEEEEE;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+}
+.main >div dl{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+	margin-top: 0;
+    font-size: 16px;
+    color: #333333;
+}
+.main >div .more{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.main >div .more a{
+	display: block;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-family: "microsoft yahei";
+    background: #1926da;
+    bottom: 10px;
+}
+.main >div .more a:nth-of-type(2){
+	background: #bfbfbf;
+}
+/*------------------关注我们-----------------*/
+.mui-content{
+	background: #FFFFFF;
+}
+.concent{
+	padding:15px;
+}
+.concent>h3{
+	height:40px;
+	position:relative;
+}
+.concent>h3:after{
+	content:'';
+	display:block;
+	width:100%;
+	height:0;
+	border-top:1px solid #CC5522;
+	position:relative;
+	top:16px;
+	left:0;
+}
+.concent h3 span{
+	display:block;
+	width:90px;
+	height:30px;
+	line-height:30px;
+	background:#FFFFFF;
+	text-align:center;
+	font-size:16px;
+	position:absolute;
+	top:0;
+	left:20px;
+	z-index:11;
+	border:1px solid #CC5522;
+	font-family:"microsoft yahei";
+	color:#CC5522;
+}
+.concent .concent_top p{
+	font-size:14px;
+	color:#333333;
+	font-family:"microsoft yahei";
+	line-height:30px;
+}
+.concent .concent_top{
+	border-bottom:1px solid #CC5522;
+}
+.concent .concent_bottom{
+	padding-top:20px;
+	padding-bottom:30px;
+}
+.concent .concent_bottom h4{
+	font-size:16px;
+	font-weight:normal;
+	color:#333333;
+	text-align:center;
+	line-height:30px;
+	margin-bottom:20px;
+}
+.concent .concent_bottom div{
+	display: flex;
+	justify-content: center;
+}
+.concent .concent_bottom p{
+	width:40%;
+	margin:0 5%;
+}
+.concent .concent_bottom p img{
+	width:100%;
+}
+/*-------------------底部导航开始------------------*/
+#header{
+	height:50px;
+	width: 100%;
+	box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset;
+	border-top: 1px solid rgb(82, 73, 69);
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(82, 73, 69)), color-stop(0.6, rgb(82, 73, 69)), to(rgb(72, 64, 60)));
+	z-index: 111 !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#header a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center ;
+	align-items: center;
+	color: #FFFFFF;
+	padding:5px 0 0 0;
+	background: transparent;
+	border: 0;
+	top: 0;
+}
+#header a span{
+	padding: 0;
+}
+#header a.mui-active{
+	color: #007aff;
+}
+#header .nav-home{
+	width: 70px;
+	height: 70px;
+	background: url(../img/index/home.png) no-repeat center;
+	background-size: cover;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#header ul{
+	width: 100%;
+	background: #FFFFFF;
+	padding: 0 10px;
+}
+.navlist{
+	width: 110px;
+	height: 180px;
+	text-align: center;
+}
+/*-------------------底部导航结束------------------*/
+/*-------------------左侧联系开始------------------*/
+.con-left{
+	position: fixed;
+	width: 170px;
+	height: 132px;
+	left: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url('../img/index/iconBack10.png') no-repeat,#4587e8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	z-index: 110;
+}
+.con-left .text{
+	position: absolute;
+	width:140px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background:url(../img/index/iconWord2.png) no-repeat center center;
+}
+/*-------------------左侧联系结束------------------*/
+/*-------------------请你留言开始------------------*/
+.form{
+	width: 240px;
+	height: 349px;
+	color: #000;
+    border-radius: 5px;
+    background-color: #ededed;
+    position: fixed;
+    bottom: 50px;
+    z-index: 11;
+}
+.form.active1{
+	bottom: -260px;
+}
+.form.active{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.form .title{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00aef3;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.form .title h1{
+	height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    padding-left: 12px;
+    color: #FFFFFF;
+}
+.form .title p{
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	margin-right: 12px;
+}
+.form .title span{
+	display: block;
+	cursor: pointer;
+}
+.form .title span.min{
+	width: 20px;
+	height: 5px;
+	background: #FFFFFF;
+	margin-top: 5px;
+}
+.form .title span.max{
+	width: 17px;
+	height: 17px;
+	border: 3px solid #FFFFFF;
+}
+.form form{
+	padding: 0 9px;
+}
+.form form div{
+	position: relative;
+}
+.form form textarea{
+	width: 221px;
+    height: 79px;
+    margin: 12px auto 7px;
+    padding: 2px;
+    resize: none;
+    overflow: hidden;
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
+
+.form form input[type=text],input[type=number],input[type=email]{
+	padding:0 0 0 30px;
+}
+.form form input{
+	height: 34px;
+    width: 221px;
+    line-height: 34px;
+    margin: 7px auto 0;
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+}
+.form form span{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.form form input[type=submit]{
+	height: 35px;
+    width: 90px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #00aef3;
+    padding: 0;
+}
+/*-------------------请你留言结束------------------*/
+/*-------------------弹出框开始------------------*/
+#popover{
+	width: 380px;
+   	height: 175px;
+   	background: url(../img/index/inviteBack0.png) no-repeat,#0085DA;
+   	position: fixed;
+   	top: 50%;
+   	left: 50%;
+   	transform: translate(-50%,-50%);
+   	display: block;
+   	opacity: 1;
+}
+#popover.none{
+	display: none;
+}
+#popover .close{
+	display: block;
+	text-align: right;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+#popover .text{
+	position: absolute;
+    top: 44px;
+    left: 128px;
+    right: 26px;
+    font-size: 16px;
+    color: #fff;
+}
+#popover .btn{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+#popover .btn button{
+	display: inline-block;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    padding: 0;
+}
+#popover .btn button:nth-of-type(2){
+	background-color: #FFFFFF;
+	color: #0085da;
+}
+
+
+/*-------------------弹出框结束------------------*/

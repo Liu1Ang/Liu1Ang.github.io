@@ -1,0 +1,581 @@
+{
+	"@platforms": ["android", "iPhone", "iPad"],
+	"id": "H5F424EF3",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "batiya",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "2.0.0",/*应用版本名称*/
+		"code": "83"
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+            "description": "访问加速度感应器"
+        },
+        
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Device": {
+            "description": "访问设备信息"
+        },
+        "Downloader": {
+            "description": "文件下载管理"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "File": {
+            "description": "访问本地文件系统"
+        },
+        "Gallery": {
+            "description": "访问系统相册"
+        },
+        
+         "Invocation": {
+            "description": "使用Native.js能力"
+        },
+        
+        
+        
+        "Storage": {
+            "description": "管理应用本地数据"
+        },
+        
+        "Uploader": {
+            "description": "管理文件上传任务"
+        },
+        "Runtime": {
+            "description": "访问运行期环境"
+        },
+        "XMLHttpRequest": {
+            "description": "跨域网络访问"
+        },
+        "Zip": {
+            "description": "文件压缩与解压缩"
+        },
+        
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        
+        "Webview":{
+        	"description": "窗口管理"
+        },
+        "NativeUI":{
+        	"description": "原生UI控件"
+        },
+        "Navigator":{
+        	"description": "浏览器信息"
+        },
+        "NativeObj":{
+        	"description": "原生对象"
+        }
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>","<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>"]
+			},
+			"orientation": ["portrait-primary","portrait-secondary","landscape-primary","landscape-secondary"],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png",/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png","retina8":"unpackage/res/icons/180x180.png","settings-retina8":"unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": ""
+				}
+			}
+		}
+	},
+	"dependencies":{
+		"pages": {
+			"contact/apply.html": {
+				"href": "contact/apply.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"contact/apply.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"img/index/banner1.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 30
+			},
+			"contact/contant.html": {
+				"href": "contact/contant.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"contact/contant.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"contact/contant.js",
+					"img/index/banner1.jpg",
+					"contact/liu.png",
+					"contact/yuan.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 23
+			},
+			"new/newMore.html": {
+				"href": "new/newMore.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"new/css/newMore.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"new/js/newMore.js"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 17
+			},
+			"new/newInvest.html": {
+				"href": "new/newInvest.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"new/css/newInvest.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"new/img/invest1.jpg",
+					"new/img/invest2.jpg",
+					"new/img/invest3.jpg",
+					"new/img/invest4.jpg",
+					"new/img/invest5.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"new/newMore.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 15
+			},
+			"new/photo.html": {
+				"href": "new/photo.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"new/css/photo.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"new/js/photo.js",
+					"new/photo.json",
+					"img/index/banner1.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 10
+			},
+			"company/developers.html": {
+				"href": "company/developers.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"company/css/developers.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"img/index/banner1.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif",
+					"company/img/zs1.jpg",
+					"company/img/zs2.jpg",
+					"company/img/zs3.jpg",
+					"company/img/zs4.jpg",
+					"company/img/zs5.jpg"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 6
+			},
+			"company/BuildingIn.html": {
+				"href": "company/BuildingIn.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"company/css/BuildingIn.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"company/img/tel.png",
+					"company/img/orient.jpg",
+					"company/img/orient.webm",
+					"company/img/img1.png",
+					"company/img/the-orient-map-brochure.jpg",
+					"img/index/banner4.jpg",
+					"img/index/banner1.jpg",
+					"img/index/banner2.jpg",
+					"company/img/banner_img_small_03.jpg",
+					"company/img/banner_img_small_05.jpg",
+					"company/img/banner_img_small_07.jpg",
+					"company/img/banner_img_small_09.jpg",
+					"company/img/DSC_0006.JPG",
+					"company/img/DSC_0021.JPG",
+					"company/img/DSC_0024.JPG",
+					"company/img/DSC_0029.JPG",
+					"company/img/DSC_0031.JPG",
+					"company/img/DSC_0033.JPG",
+					"company/img/DSC_0034.JPG",
+					"company/img/DSC_0035.JPG",
+					"company/img/DSC_0004.JPG",
+					"company/img/DSC_0013.JPG",
+					"company/img/DSC_0014.JPG",
+					"company/img/DSC_0018.JPG",
+					"company/img/DSC_0025.JPG",
+					"company/img/DSC_0026.JPG",
+					"company/img/DSC_0028.JPG",
+					"company/img/DSC_0032.JPG",
+					"img/index/weixin.png",
+					"img/index/figure.gif",
+					"company/img/banner_pic4.jpg",
+					"company/img/banner_pic1.jpg",
+					"company/img/banner_pic2.jpg",
+					"company/img/banner_pic3.jpg"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 3
+			},
+			"company/invest.html": {
+				"href": "company/invest.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"company/css/invest.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"img/index/banner1.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif",
+					"company/img/0.jpg",
+					"company/img/2.jpg",
+					"company/img/4.jpg"
+				],
+				"refer": [
+					"company/BuildingIn.html",
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 3
+			},
+			"custom/custom.html": {
+				"href": "custom/custom.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"custom/custom.css",
+					"img/index/home.png",
+					"js/mui.min.js",
+					"img/index/banner1.jpg",
+					"custom/img/dingzhi_01.jpg",
+					"custom/img/dingzhi_03.jpg",
+					"custom/img/dingzhi_05.jpg",
+					"custom/img/dingzhi_07.jpg",
+					"custom/img/dingzhi_09.jpg",
+					"custom/img/dingzhi_13.jpg",
+					"custom/img/dingzhi_14.jpg",
+					"custom/img/dingzhi_16.jpg",
+					"custom/img/dingzhi_20.jpg",
+					"custom/img/dingzhi_21.jpg",
+					"custom/img/dingzhi_22.jpg",
+					"custom/img/dingzhi_26.jpg",
+					"custom/img/dingzhi_27.jpg",
+					"custom/img/dingzhi_29.jpg",
+					"custom/img/dingzhi_33.jpg",
+					"custom/img/dingzhi_34.jpg",
+					"custom/img/dingzhi_36.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif",
+					"custom/img/dingzhi_41.jpg",
+					"custom/img/dingzhi_43.jpg",
+					"custom/img/dingzhi_47.jpg",
+					"custom/img/dingzhi_49.jpg",
+					"custom/img/dingzhi_51.jpg",
+					"custom/img/dingzhi_55.jpg",
+					"custom/img/dingzhi_57.jpg",
+					"custom/img/dingzhi_59.jpg"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 1
+			},
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"js/scale.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/index.css",
+					"img/index/home.png",
+					"img/index/iconBack10.png",
+					"img/index/iconWord2.png",
+					"img/index/inviteBack0.png",
+					"js/mui.min.js",
+					"js/index.js",
+					"img/index/banner4.jpg",
+					"img/index/banner1.jpg",
+					"img/index/banner2.jpg",
+					"img/index/banner3.jpg",
+					"img/index/weixin.png",
+					"img/index/figure.gif",
+					"img/index/banner_pic1.jpg",
+					"img/index/img99.jpg",
+					"img/index/img100.jpg"
+				],
+				"refer": [
+					"index.html",
+					"custom/custom.html",
+					"company/BuildingIn.html",
+					"company/invest.html",
+					"company/developers.html",
+					"new/photo.html",
+					"new/newInvest.html",
+					"contact/contant.html",
+					"contact/apply.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"new/img/photo/693.jpg",
+				"new/img/photo/674.jpg",
+				"new/img/photo/677.jpg",
+				"common/img/iconWord2.png",
+				"new/img/photo/709.jpg",
+				"new/img/photo/694.jpg",
+				"new/img/photo/678.jpg",
+				"new/img/photo/707.jpg",
+				"js/mui.js",
+				"new/img/photo/699.jpg",
+				"new/img/photo/710.jpg",
+				"new/img/photo/680.jpg",
+				"new/img/photo/679.jpg",
+				"common/header-left.html",
+				"new/img/photo/673.jpg",
+				"new/img/photo/690.jpg",
+				"common/css/header.css",
+				"new/img/photo/695.jpg",
+				"new/img/photo/698.jpg",
+				"new/img/photo/700.jpg",
+				"css/mui.css",
+				"common/img/iconBack10.png",
+				"common/css/header-left.css",
+				"new/img/photo/704.jpg",
+				"new/img/photo/692.jpg",
+				"new/img/photo/688.jpg",
+				"common/css/footer.css",
+				"common/header.html",
+				"new/img/photo/702.jpg",
+				"new/img/photo/681.jpg",
+				"new/img/photo/696.jpg",
+				"new/img/photo/685.jpg",
+				"common/img/home.png",
+				"common/img/figure.gif",
+				"new/img/photo/697.jpg",
+				"new/img/photo/691.jpg",
+				"new/img/photo/701.jpg",
+				"new/img/photo/689.jpg",
+				"new/img/photo/683.jpg",
+				"new/img/photo/708.jpg",
+				"new/img/photo/672.jpg",
+				"new/img/photo/686.jpg",
+				"new/img/photo/675.jpg",
+				"new/img/photo/684.jpg",
+				"new/img/photo/705.jpg",
+				"new/img/photo/676.jpg",
+				"new/img/photo/706.jpg",
+				"common/img/weixin.png",
+				"new/img/photo/682.jpg",
+				"common/footer.html",
+				"new/img/photo/703.jpg",
+				"new/img/photo/687.jpg"
+			]
+		}
+	},
+	"unpackage":[
+	  "common/css/footer.css",
+	  "common/css/header-left.css",
+	  "common/css/header.css",
+	  "common/footer.html",
+	  "common/header-left.html",
+	  "common/header.html",
+	  "common/img/figure.gif",
+	  "common/img/home.png",
+	  "common/img/iconBack10.png",
+	  "common/img/iconWord2.png",
+	  "common/img/weixin.png",
+	  "css/mui.css",
+	  "js/mui.js"
+	]
+}

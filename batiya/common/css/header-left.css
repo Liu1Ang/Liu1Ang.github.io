@@ -1,0 +1,117 @@
+html,body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #000000;
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ul,li{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+.header-left{
+	position: fixed;
+	width: 170px;
+	height: 132px;
+	left: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url('../img/iconBack10.png') no-repeat,#4587e8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+.header-left .text{
+	position: absolute;
+	width:140px;
+	height: 50px;
+	background:url(../img/iconWord2.png) no-repeat center;
+}
+.form{
+	width: 240px;
+	height: 349px;
+	color: #000;
+    border-radius: 5px;
+    background-color: #ededed;
+}
+.form .title{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00aef3;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.form .title h1{
+	height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    padding-left: 12px;
+    color: #FFFFFF;
+}
+.form .title span{
+	cursor: pointer;
+	margin-right: 12px;
+}
+.form .title span.min{
+	width: 20px;
+	height: 5px;
+	background: #FFFFFF;
+}
+.form .title span.max{
+	width: 17px;
+	height: 17px;
+	border: 3px solid #FFFFFF;
+}
+.form form{
+	padding: 0 9px;
+}
+.form form div{
+	position: relative;
+}
+.form form textarea{
+	width: 221px;
+    height: 79px;
+    margin: 12px auto 7px;
+    padding: 2px;
+    resize: none;
+    overflow: hidden;
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+    text-align: left;
+    font-size: 16px;
+}
+
+.form form input[type=text],input[type=number],input[type=email]{
+	padding:0 0 0 30px;
+}
+.form form input{
+	height: 34px;
+    width: 221px;
+    line-height: 34px;
+    margin: 7px auto 0;
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+}
+.form form span{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+.form form input[type=submit]{
+	height: 35px;
+    width: 90px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #00aef3;
+    padding: 0;
+}

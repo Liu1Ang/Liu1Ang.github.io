@@ -1,0 +1,313 @@
+{
+  "contact/apply.html": {
+    "href": "contact/apply.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "contact/apply.css",
+      "js/mui.min.js",
+      "img/index/banner1.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "contact/contant.html": {
+    "href": "contact/contant.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "contact/contant.css",
+      "js/mui.min.js",
+      "contact/contant.js",
+      "img/index/banner1.jpg",
+      "contact/liu.png",
+      "contact/yuan.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "new/newMore.html": {
+    "href": "new/newMore.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "new/css/newMore.css",
+      "js/mui.min.js",
+      "new/js/newMore.js"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "new/newInvest.html": {
+    "href": "new/newInvest.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "new/css/newInvest.css",
+      "js/mui.min.js",
+      "new/img/invest1.jpg",
+      "new/img/invest2.jpg",
+      "new/img/invest3.jpg",
+      "new/img/invest4.jpg",
+      "new/img/invest5.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "new/newMore.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "new/photo.html": {
+    "href": "new/photo.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "new/css/photo.css",
+      "js/mui.min.js",
+      "new/js/photo.js",
+      "new/photo.json",
+      "img/index/banner1.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "company/developers.html": {
+    "href": "company/developers.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "company/css/developers.css",
+      "js/mui.min.js",
+      "img/index/banner1.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif",
+      "company/img/zs1.jpg",
+      "company/img/zs2.jpg",
+      "company/img/zs3.jpg",
+      "company/img/zs4.jpg",
+      "company/img/zs5.jpg"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "company/BuildingIn.html": {
+    "href": "company/BuildingIn.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "company/css/BuildingIn.css",
+      "js/mui.min.js",
+      "company/img/tel.png",
+      "company/img/orient.jpg",
+      "company/img/orient.webm",
+      "company/img/img1.png",
+      "company/img/the-orient-map-brochure.jpg",
+      "img/index/banner4.jpg",
+      "img/index/banner1.jpg",
+      "img/index/banner2.jpg",
+      "company/img/banner_img_small_03.jpg",
+      "company/img/banner_img_small_05.jpg",
+      "company/img/banner_img_small_07.jpg",
+      "company/img/banner_img_small_09.jpg",
+      "company/img/DSC_0006.JPG",
+      "company/img/DSC_0021.JPG",
+      "company/img/DSC_0024.JPG",
+      "company/img/DSC_0029.JPG",
+      "company/img/DSC_0031.JPG",
+      "company/img/DSC_0033.JPG",
+      "company/img/DSC_0034.JPG",
+      "company/img/DSC_0035.JPG",
+      "company/img/DSC_0004.JPG",
+      "company/img/DSC_0013.JPG",
+      "company/img/DSC_0014.JPG",
+      "company/img/DSC_0018.JPG",
+      "company/img/DSC_0025.JPG",
+      "company/img/DSC_0026.JPG",
+      "company/img/DSC_0028.JPG",
+      "company/img/DSC_0032.JPG",
+      "img/index/weixin.png",
+      "img/index/figure.gif",
+      "company/img/banner_pic4.jpg",
+      "company/img/banner_pic1.jpg",
+      "company/img/banner_pic2.jpg",
+      "company/img/banner_pic3.jpg"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "company/invest.html": {
+    "href": "company/invest.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "company/css/invest.css",
+      "js/mui.min.js",
+      "img/index/banner1.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif",
+      "company/img/0.jpg",
+      "company/img/2.jpg",
+      "company/img/4.jpg"
+    ],
+    "refer": [
+      "company/BuildingIn.html",
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "custom/custom.html": {
+    "href": "custom/custom.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "custom/custom.css",
+      "js/mui.min.js",
+      "img/index/banner1.jpg",
+      "custom/img/dingzhi_01.jpg",
+      "custom/img/dingzhi_03.jpg",
+      "custom/img/dingzhi_05.jpg",
+      "custom/img/dingzhi_07.jpg",
+      "custom/img/dingzhi_09.jpg",
+      "custom/img/dingzhi_13.jpg",
+      "custom/img/dingzhi_14.jpg",
+      "custom/img/dingzhi_16.jpg",
+      "custom/img/dingzhi_20.jpg",
+      "custom/img/dingzhi_21.jpg",
+      "custom/img/dingzhi_22.jpg",
+      "custom/img/dingzhi_26.jpg",
+      "custom/img/dingzhi_27.jpg",
+      "custom/img/dingzhi_29.jpg",
+      "custom/img/dingzhi_33.jpg",
+      "custom/img/dingzhi_34.jpg",
+      "custom/img/dingzhi_36.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif",
+      "custom/img/dingzhi_41.jpg",
+      "custom/img/dingzhi_43.jpg",
+      "custom/img/dingzhi_47.jpg",
+      "custom/img/dingzhi_49.jpg",
+      "custom/img/dingzhi_51.jpg",
+      "custom/img/dingzhi_55.jpg",
+      "custom/img/dingzhi_57.jpg",
+      "custom/img/dingzhi_59.jpg"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/scale.js",
+      "css/mui.min.css",
+      "css/index.css",
+      "js/mui.min.js",
+      "js/index.js",
+      "img/index/banner4.jpg",
+      "img/index/banner1.jpg",
+      "img/index/banner2.jpg",
+      "img/index/banner3.jpg",
+      "img/index/weixin.png",
+      "img/index/figure.gif",
+      "img/index/banner_pic1.jpg",
+      "img/index/img99.jpg",
+      "img/index/img100.jpg"
+    ],
+    "refer": [
+      "index.html",
+      "custom/custom.html",
+      "company/BuildingIn.html",
+      "company/invest.html",
+      "company/developers.html",
+      "new/photo.html",
+      "new/newInvest.html",
+      "contact/contant.html",
+      "contact/apply.html"
+    ],
+    "priority": 0
+  }
+}

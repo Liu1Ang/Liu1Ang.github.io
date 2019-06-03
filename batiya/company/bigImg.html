@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../img/favicon.ico" rel="shortcut icon">
+		<style type="text/css">
+			body{
+				background: #FFFFFF;
+			}
+			img{
+				width: 100%;
+				display: block;
+				padding: 10px;
+			}
+			#header{
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+			}
+			.mui-content{
+				background: #FFFFFF;
+			}
+			.mui-bar{
+				background: #FFFFFF;
+			}
+			a{
+				width: 20px;
+				height: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back">X</a>
+		</header>
+		<div class="mui-content">
+			<img src=""/>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			var src = localStorage.getItem('url1');
+			mui('img')[0].setAttribute('src',src);
+		</script>
+	</body>
+
+</html>
