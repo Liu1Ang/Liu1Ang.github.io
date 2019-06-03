@@ -1,0 +1,123 @@
+.iconfont{
+	font-size: 26px !important;
+	color: #fff;
+}
+/*====================banner start*/
+.banner{
+	position: relative;
+	width: 100%;
+	height: 605px;
+	background: url(../img/wx1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.activity_search{
+	position: absolute;
+	bottom: 35px;
+	left: 50%;
+	transform: translate(-50%);
+	width:906px;
+	height:116px;
+	background: rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "楷体";
+}
+.activity_search input[type=search]{
+	display: block;
+	width: 622px;
+	height: 51px;
+	line-height:51px;
+	color: #000;
+	font-size: 18px;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px;
+	
+}
+.activity_search button[type="submit"]{
+	display: block;
+	width: 61px;
+	height: 51px;
+	line-height:51px;
+	margin-left: 10px;
+	border-radius: 10px;
+	background: #436fdc;
+	border: 0;
+}
+/*=====================main start*/
+.main{
+	width: 1000px;
+	margin: 44px auto;
+}
+.main h2{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #333333;
+	font-size: 26px;
+	font-weight: normal;
+}
+.main ul{
+	width: 100%;
+}
+
+.main ul li{
+	cursor: pointer;
+	width: 31%;
+	margin: 1%;
+	height: 280px;
+}
+.main ul li i{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.main ul li img{
+	display: block;
+	margin: 0 auto;
+}
+.main ul li h3{
+	margin-top: 10px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}
+.main ul li a{
+	color: #000000;
+}
+.main .am-gallery li>.am-gallery-item{
+	width: 100%;
+	border: 0;
+	padding:0;
+}
+.am-gallery-default .am-gallery-item img{
+	display: inline-block;
+	width: auto;
+	height: 220px;
+	overflow: hidden;
+	text-align: center;
+}
+.main .am-gallery-item img{
+	border: 0;
+}
+.main .more{
+	width: 120px;
+	margin: 10px auto;
+	height: 40px;
+	line-height: 40px;
+	background: #436fdc;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.main .other{
+	margin-top: 30px;
+}
+.am-gallery div:hover{
+	transform: none;
+	box-shadow: none;
+}
