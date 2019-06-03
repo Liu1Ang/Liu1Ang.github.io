@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<style>
+			/*.detailHtml {width: 680px;margin: 0 auto;}
+			.content>p {margin-top: 20px;}
+			.title {margin-top: 20px;}*/
+			.baiQRcode {width: 172px;height: 196px;background: url(img/wfl.jpg) no-repeat;background-size: cover; }
+			.essay_right.sc1{ position: fixed; right: 250px;top: 158px;/* margin-left: 266px; */}
+			.essay_right.sc2{/* margin-top: 80px; */position: fixed;right: 250px;top: 158px;}
+		</style>
+	</head>
+	<body>
+		<script>
+	    // 获取浏览器页面可见高度和宽度
+			var _PageHeight = document.documentElement.clientHeight,
+			_PageWidth = document.documentElement.clientWidth;
+			//计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+			var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0, 
+			_LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+			//在页面未加载完毕之前显示的loading Html自定义内容
+			var _LoadingHtml = '<div id="loadingDiv" style="position:absolute;left:0;bottom:0;width:100%;height:' +_PageHeight + 'px;top:0;background:rgba(0,0,0,0.8);opacity:0.7;filter:alpha(opacity=80);z-index:10000;"><div style="position: absolute; cursor1: wait; left: ' + _LoadingLeft + 'px; top:' + _LoadingTop + 'px; width: auto; height: 57px; line-height: 57px; padding-left: 50px; padding-right: 5px; background: #fff url(img/loading.gif) no-repeat scroll 5px 10px; border: 2px solid #95B8E7; color: #696969; font-family:\'Microsoft YaHei\';">页面加载中，请等待...</div></div>';
+			//呈现loading效果
+			document.write(_LoadingHtml);
+			if($("#loadingDiv").css("display") !== "none"){
+				$("body").css("overflow","hidden")
+			}
+	  </script>
+		<div class="header">
+		   <div class="nav clearfix">
+		    	<strong class="left"><img src="img/logo.jpg" alt=""/></strong>
+		        <ul id="navlist" style="padding-left: 0; margin: 0;height: 100%;">
+		            <li><a href="http://www.foyuanzhilu.com/">首页</a><span></span></li>
+		            <li class="cur"><a href="wenchuang.html">佛缘文创</a><span></span></li>
+		            <li class="fbgb clearfix">
+		            	<a href='index.html'>佛宝国宝</a><i class="icon"></i><span></span>
+		            	<div class="fbgb-down clearfix">
+		            		<p><a href="baiMore.html">百德书法</a></p>
+		            		<p><a href="shi.html">释迦佛应化事迹图</a></p>
+		            	</div>
+		            </li>
+		            <li><a href='Byzhuanti.html'>百印祥福</a><span></span></li>
+		            <li><a href='http://www.foyuanzhilu.com/route'>朝圣之旅</a><span></span></li>
+		            <li><a href='http://www.foyuanzhilu.com/bless'>万众祈福</a><span></span></li>
+		            <li><a href="http://www.foyuanzhilu.com/love">我心有爱</a><span></span></li>
+		            <li><a href="http://www.foyuanzhilu.com/audio">佛缘视频</a><span></span></li> 
+		        </ul>
+		    </div>
+		</div>
+		
+		<div class="detailHtml">
+			<h4 class="title"></h4>
+			<p class="name"><span class="created_at"></span></p>
+			<div class="content">
+				<div class="con"></div>
+				<div class="baiQRcode essay_right sc2">
+				</div>
+			</div>
+		</div>
+				<!--footer-->
+<div class="footer_new">
+    <div class="block footer_newall">
+        <div class="footer_new1 clearfix">
+            <ul class="left ul_1">
+                <li>
+                    <p class="p1"><a>批准单位：</a></p>
+                    <p><a>国家宗教事务局</a></p>
+                </li>
+              <li>
+                    <p class="p1"><a>发起单位：</a></p>
+                    <p><a>中国生物多样性保护与绿色发展基金会</a></p>
+                    <p><a>蓝毗尼发展委员会</a></p>
+                    <p><a>深圳市我有爱文化传播有限公司</a></p>
+                    <p><a>凤凰网佛教频道</a></p>
+                </li>
+                <li>
+                    <p class="p1"><a>主办单位：</a></p>
+                    <p><a >深圳市我有爱文化传播有限公司</a></p>
+                </li>
+            </ul>
+            <ul class="left ul_2">
+                <li>
+                    <p class="p1"><a>关于我们：</a></p>
+                    <p><a>佛缘之路 朝圣祈福万里行</a></p>
+                    <p><a>佛缘之路 我心有爱</a></p>
+                    <p><a>联系我们</a></p>
+                    <p><a>加入我们</a></p>
+                    <p><a>朝圣路线</a></p>
+                </li>
+                <li>
+                    <p class="p1"><a>活动支持：</a></p>
+                    <p><a>越野e族</a></p>
+                </li>
+                <li>
+                    <p class="p1"><a>全程媒体报道：</a></p>
+                    <p><a>腾讯新闻</a></p>
+                </li>
+            </ul>
+            <ul class="left ul_3">
+                <li class="clearfix ul_3_li1">
+                    <p class="left dingyue"><img src="img/dingyuehao.jpg" width="108" height="108" alt=""/> 佛缘之路官方微信订阅号</p>
+                    <p class="left"><img src="img/fuwuhao.jpg" width="109" height="109" alt=""/>佛缘之路官方微信服务号</p>
+                </li>
+                <li class="clearfix ul_3_li2"><p class="p1 left"><a href="#">关注我们：</a></p>
+                    <a class="left" href="http://weibo.com/u/5313648758"><img src="img/footer_ico1.png" width="57" height="57" alt=""/></a>
+                    <a class="left" href="http://t.qq.com/foyuanzhilu"><img src="img/footer_ico2.png" width="57" height="57" alt=""/></a>
+                    <a class="left" href="http://user.qzone.qq.com/3451848524?ptlang=2052" ><img src="img/footer_ico3.png" width="57" height="57" alt=""/></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_new2 clearfix">
+            <p class="p1"><a href="#">友情链接：</a></p>
+            <span><a href="http://fo.ifeng.com">凤凰网佛教频道 </a></span>
+            <span><a href="http://www.fblife.com">越野e族 </a></span>
+            <span><a href="http://foxue.qq.com/">腾讯新闻 </a></span>
+            <span><a href="http://fo.sina.com.cn/">新浪佛学 </a></span>
+            <span><a href="http://www.fobao.cn/">佛宝网 </a></span>
+        </div>  
+    </div>
+</div>
+<div class="footer">
+    <div class="block clearfix">
+        <div style="width:200px; white-space:nowrap;text-align: left;margin-left:50px;"><img src="img/logo_footer.jpg" alt=""></div>
+        <div class="foot_sm" style="width:700px;">佛缘之路所有版权归原作者所有，任何商业用途均需联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权益。京ICP备19015254号-2</div>
+        <div  style="margin-bottom:10px; white-space:nowrap;float:right;text-align: right;">
+        	<!--<script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=9d2b47c9-d022-46ca-8fc8-afcf0ed1c068&width=75&height=90&type=1" type="text/javascript" charset="utf-8"></script>-->  
+        </div>
+    </div>
+</div>
+		<script src="js/time.js"></script>
+
+		<script type="text/javascript" src="js/main1.js"></script>
+		<script>
+			
+	$(function(){
+		// 获取浏览器地址参数
+			function getUrlParam(name){
+			    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+			    var r = window.location.search.substr(1).match(reg);
+			    if (r!=null) return unescape(r[2]); return null;
+			}
+			var id = getUrlParam('id');
+			$.ajax({
+				type:"get",
+				url:"http://foyuanzhilu.com.cn/pavilion/news?c=" + id,
+				async:true,
+				dataType: 'json',
+				success: function(res) {
+					let arr = res.list[0]
+   				$('.title').html(arr.title)
+   				let time = format(arr.created_at)
+					$('.created_at').html(time)
+					$('.con').html(arr.content)
+				},
+				complete: function() {
+					$("body").css("overflow","auto")
+					$("#loadingDiv").css("display","none");
+				}
+			});
+		// 是否显示二维码
+        $('body').scroll(function() {
+        	console.log(5)
+        	if($('.essay_right').length){
+						if($('body').scrollTop()<240){
+							$('.essay_right').removeClass('sc2').addClass('sc1');
+						}else{
+							$('.essay_right').removeClass('sc1').addClass('sc2');
+						}
+						if($('body').scrollTop() > $(document).height()-$(window).height()-600){
+							$('.essay_right').fadeOut();
+						}else{
+							$('.essay_right').fadeIn();
+						}
+					}
+        })
+    });
+</script>
+	</body>
+</html>

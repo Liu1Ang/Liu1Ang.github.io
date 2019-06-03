@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>佛缘之路</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/BYzhuanty.css" />
+		<link rel="stylesheet" href="css/amazeui.min.css" />
+    <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/amazeui.min.js"></script>
+	</head>
+	<body>
+		<script>
+	    // 获取浏览器页面可见高度和宽度
+			var _PageHeight = document.documentElement.clientHeight,
+			_PageWidth = document.documentElement.clientWidth;
+			//计算loading框距离顶部和左部的距离（loading框的宽度为215px，高度为61px）
+			var _LoadingTop = _PageHeight > 61 ? (_PageHeight - 61) / 2 : 0, 
+			_LoadingLeft = _PageWidth > 215 ? (_PageWidth - 215) / 2 : 0;
+			//在页面未加载完毕之前显示的loading Html自定义内容
+			var _LoadingHtml = '<div id="loadingDiv" style="position:absolute;left:0;bottom:0;width:100%;height:' +_PageHeight + 'px;top:0;background:rgba(0,0,0,0.8);opacity:0.7;filter:alpha(opacity=80);z-index:10000;"><div style="position: absolute; cursor1: wait; left: ' + _LoadingLeft + 'px; top:' + _LoadingTop + 'px; width: auto; height: 57px; line-height: 57px; padding-left: 50px; padding-right: 5px; background: #fff url(img/loading.gif) no-repeat scroll 5px 10px; border: 2px solid #95B8E7; color: #696969; font-family:\'Microsoft YaHei\';">页面加载中，请等待...</div></div>';
+			//呈现loading效果
+			document.write(_LoadingHtml);
+			if($("#loadingDiv").css("display") !== "none"){
+				$("body").css("overflow","hidden")
+			}
+	  </script>
+		<div class="scroll" style="width: 100%;height: 100%;">
+		<!--header-->
+		<div class="header">
+		    <div class="nav clearfix">
+		    	<strong class="left"><img src="img/logo.jpg" alt=""/></strong>
+		        <ul id="navlist" style="padding-left: 0; margin: 0;height: 100%;">
+		            <li><a href="http://www.foyuanzhilu.com/">首页</a><span></span></li>
+		            <li><a href="wenchuang.html">佛缘文创</a><span></span></li>
+		            <li class="fbgb clearfix">
+		            	<a href='index.html'>佛宝国宝</a><i class="icon"></i><span></span>
+		            	<div class="fbgb-down clearfix">
+		            		<p><a href="baiMore.html">百德书法</a></p>
+		            		<p><a href="shi.html">释迦佛应化事迹图</a></p>
+		            	</div>
+		            </li>
+		            <li class="cur"><a href='Byzhuanti.html'>百印祥福</a><span></span></li>
+		            <li><a href='http://www.foyuanzhilu.com/route'>朝圣之旅</a><span></span></li>
+		            <li><a href='http://www.foyuanzhilu.com/bless'>万众祈福</a><span></span></li>
+		            <li><a href="http://www.foyuanzhilu.com/love">我心有爱</a><span></span></li>
+		            <li><a href="http://www.foyuanzhilu.com/audio">佛缘视频</a><span></span></li> 
+		        </ul>
+		    </div>
+		</div>
+		
+		<div id="BYout">
+			<div class="BYbanner"></div>
+			
+			<div class="BYvideo clearfix">
+				<p class="videoTitle title"></p>
+				<!--<div class="videoBg2">-->
+					<div class="video center">
+						<!--<a href="http://static1.foyuanzhilu.com/videoclass/40001.mp4" style="height:0px;border-bottom:none;">-->
+						<video class="video1" src="http://static1.foyuanzhilu.com/videoclass/40001.mp4" width="1190" height="661" controls="controls" poster="BYzhuantiyeImg/poster.jpg" >
+							<source src="http://static1.foyuanzhilu.com/videoclass/40001.mp4" type="video/mp4">
+   						<source src="http://static1.foyuanzhilu.com/videoclass/40001.mp4" type="video/ogg">
+   						您的浏览器不支持播放该视频。
+						</video>
+					<!--</a>-->
+					</div>
+				<!--</div>-->
+				<p class="infoTitle title"></p>
+			</div>
+			
+			<div class="BYinfo">
+				<div class="infoCen">
+					<div class="info_top clearfix">
+						<div class="info_left">
+							<img src="BYzhuantiyeImg/zi.png" alt="" />
+						</div>
+						<div class="info_right">
+							<p>百印祥福将180座对中国佛教历史发展有贡献的寺院佛印汇集一卷，形成了独一无二的稀世珍宝，打造出庄严殊胜的视觉盛宴。</p>
+							<p>为了恭敬展示这些难得的珍宝，佛缘之路特请篆刻大师，以四大名山道场菩萨相为形，加盖于卷轴四角，象征菩提道法镇守四方，示意中国佛法长盛不衰。</p>
+						</div>
+					</div>
+					<div class="info_btm">
+						<ul class="Byxfstamp">
+							<!--<div>
+								<li><img src="BYzhuantiyeImg/hainan.png" alt="" /><br /><span>海南南山寺</span></li>
+								<li><img src="BYzhuantiyeImg/zhejiang.png" alt="" /><br /><span>浙江法雨寺</span></li>
+								<li><img src="BYzhuantiyeImg/dailuoding.png" alt="" /><br /><span>山西黛螺顶</span></li>
+								<li><img src="BYzhuantiyeImg/longhua.png" alt="" /><br /><span>上海龙华寺</span></li>
+								<li><img src="BYzhuantiyeImg/dabeilou.png" alt="" /><br /><span>安徽大悲楼</span></li>
+							</div>
+							<div>
+								<li><img src="BYzhuantiyeImg/boresi.png" alt="" /><br /><span>吉林般若寺</span></li>
+								<li><img src="BYzhuantiyeImg/wukongsi.png" alt="" /><br /><span>江苏悟空寺</span></li>
+								<li><img src="BYzhuantiyeImg/lengyanchan.png" alt="" /><br /><span>辽宁楞严禅寺</span></li>
+								<li><img src="BYzhuantiyeImg/dalingyan.png" alt="" /><br /><span>山东大灵岩寺</span></li>
+								<li><img src="BYzhuantiyeImg/xiangji.png" alt="" /><br /><span>陕西香积寺</span></li>
+							</div>
+							<div>
+								<li><img src="BYzhuantiyeImg/kaiyuan.png" alt="" /><br /><span>福建开元寺</span></li>
+								<li><img src="BYzhuantiyeImg/nanhuachan.png" alt="" /><br /><span>广东南华禅寺</span></li>
+								<li><img src="BYzhuantiyeImg/sien.png" alt="" /><br /><span>广西四恩寺</span></li>
+								<li><img src="BYzhuantiyeImg/linji.png" alt="" /><br /><span>河北临济寺</span></li>
+								<li><img src="BYzhuantiyeImg/baima.png" alt="" /><br /><span>河南白马寺</span></li>
+							</div>-->
+							</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="wenhua">
+				<p class="wenhuaTitle title"></p>
+				<div class="clearfix center">
+					<p class="wenhua_left"></p>
+					<p class="wenhua_right"></p>
+				</div>
+				
+				<div class="wenhuaBg">
+					<div class="wenhua_center clearfix">
+						
+							
+						
+						<div class="licheng_left">
+							<div class="one_left">
+								<p><img src="BYzhuantiyeImg/1.png" alt="" /></p>
+								<p class="lichengZi">“佛缘之路”活动是以民间践行者身份贯彻国家“一带一路”战略构架的文化交流活动。活动全程公益，由李进先生发起并出资，创建了深圳市我有爱文化传播有限公司。</p>
+								<p><img src="BYzhuantiyeImg/3.png" alt="" /></p>
+							</div>
+							
+							<div class="two_left">
+								<p><img src="BYzhuantiyeImg/chuandeng.png"alt="" /></p>
+								<p><img src="BYzhuantiyeImg/6.png" alt="" /></p>
+								<!--<p class="lichengZi">2016年7月3日，以祈祷世界和平、众生安乐、增长智慧为主题的“2016佛缘之路--五台山黛螺顶首届传灯大会”圆满举行。</p>-->
+								<p><img src="BYzhuantiyeImg/71.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/8.png" alt="" /></p>
+							</div>
+							
+							<div class="three_left">
+								<p><img src="BYzhuantiyeImg/zhongdian.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/11.png" alt="" /></p>
+								<p class="lichengZi">2017年1月25日，“佛缘之路·蓝毗尼之路圣灯节”在尼泊尔蓝毗尼圣园拉开帷幕。</p>
+								<p><img src="BYzhuantiyeImg/12.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/mingjia.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/13.png" alt="" /></p>
+								<p class="lichengZi">“佛缘之路”以践行者身份发现探索中国文化传承与发展历程，将这些千年文明的可观“财富”，用文字、图片亦或镜头的形式记录下来，为此得到了诸多名家赞誉。</p>
+								<p><img src="BYzhuantiyeImg/14.png" alt="" /></p>
+							</div>
+							
+							</div>
+							
+							<div class="licheng_mid">
+								<p><img src="BYzhuantiyeImg/qidianIcon.png" alt="" /></p>
+								<p class="zhou1 zhou"></p>
+								<p class="quan"></p>
+								<p class="zhou2 zhou"></p>
+								<p class="quan"></p>
+								<p class="zhou zhou3"></p>
+								<p class="quan2"></p>
+								<p class="zhou4 zhou"></p>
+								<p class="quan"><img src="BYzhuantiyeImg/zhong.png" alt="" /></p>
+								<p class="zhou zhou5"></p>
+								<p class="quan2"></p>
+								<p class="zhou zhou6"></p>
+								<p class="quan2"></p>
+								<p class="zhou zhou7"></p>
+							</div>
+							
+						<div class="licheng_right"> 
+							<div class="one_right">
+								<p><img src="BYzhuantiyeImg/qidian.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/4.png" alt="" /></p>
+								<p class="lichengZi">2015年10月1日，佛缘之路·朝圣祈福万里正式从海南三亚南山寺拉开序幕，一场中国历史上前所未有的大型佛教文化行走之旅，自此启程。</p>
+								<p><img src="BYzhuantiyeImg/5.png" alt="" /></p>
+							</div>
+							<div class="two_right">
+								<p><img src="BYzhuantiyeImg/chuandeng2.png"/></p>
+								<p><img src="BYzhuantiyeImg/9.png"/></p>
+								<p class="lichengZi">8月31日晚，“佛缘之路”少林寺世界传灯大典正式启动，联合国和平大使、联合国教科文组织、佛教使团团长斯里兰卡法宝长老，以及多国驻华使节及文化参赞等莅临少林寺参加传灯大典。</p>
+								<p><img src="BYzhuantiyeImg/10.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/gongyi.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/15.png"/></p>
+								<p><img src="BYzhuantiyeImg/16.png"/></p>
+								<p><img src="BYzhuantiyeImg/zhenzhai.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/17.png" alt="" /></p>
+								<p class="lichengZi">百印祥福是世间难得的佛宝重器，汇集了中国当代180座名寺古刹的珍贵佛印，常观之可断惑证真，明心见性，密藏之必违缘消灭，般若常照。</p>
+								<p><img src="BYzhuantiyeImg/181.png" alt="" /></p>
+								<p><img src="BYzhuantiyeImg/19.png" alt="" /></p>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="show">
+				<p class="showTitle title"></p>
+				<div class="showBg">
+					<p><img src="BYzhuantiyeImg/showKuang.png" alt="" /></p>
+					<div class="lunbo">
+				   <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
+						  <ul class="am-slides">
+						      <li>
+						        	<img src="BYzhuantiyeImg/show1.jpg">
+						      </li>
+						      <li>
+						        	<img src="BYzhuantiyeImg/show2.jpg">
+						      </li>
+						      <li>
+						        	<img src="BYzhuantiyeImg/show3.jpg">
+						      </li>
+						  </ul>
+					</div>
+    		</div>
+				</div>
+			</div>
+			
+			<div class="baiQRcode essay_right sc1">
+			</div>
+		</div>
+		
+		
+		
+		<!--footer-->
+<div class="footer_new">
+    <div class="block footer_newall">
+        <div class="footer_new1 clearfix">
+            <ul class="left ul_1">
+                <li>
+                    <p class="p1"><a>批准单位：</a></p>
+                    <p><a>国家宗教事务局</a></p>
+                </li>
+              <li>
+                    <p class="p1"><a>发起单位：</a></p>
+                    <p><a>中国生物多样性保护与绿色发展基金会</a></p>
+                    <p><a>蓝毗尼发展委员会</a></p>
+                    <p><a>深圳市我有爱文化传播有限公司</a></p>
+                    <p><a>凤凰网佛教频道</a></p>
+                </li>
+                <li>
+                    <p class="p1"><a>主办单位：</a></p>
+                    <p><a >深圳市我有爱文化传播有限公司</a></p>
+                </li>
+            </ul>
+            <ul class="left ul_2">
+                <li>
+                    <p class="p1"><a>关于我们：</a></p>
+                    <p><a>佛缘之路 朝圣祈福万里行</a></p>
+                    <p><a>佛缘之路 我心有爱</a></p>
+                    <p><a>联系我们</a></p>
+                    <p><a>加入我们</a></p>
+                    <p><a>朝圣路线</a></p>
+                </li>
+                <li>
+                    <p class="p1"><a>活动支持：</a></p>
+                    <p><a>越野e族</a></p>
+                </li>
+                <li>
+                    <p class="p1"><a>全程媒体报道：</a></p>
+                    <p><a>腾讯新闻</a></p>
+                </li>
+            </ul>
+            <ul class="left ul_3">
+                <li class="clearfix ul_3_li1">
+                    <p class="left dingyue"><img src="img/dingyuehao.jpg" width="108" height="108" alt=""/> 佛缘之路官方微信订阅号</p>
+                    <p class="left"><img src="img/fuwuhao.jpg" width="109" height="109" alt=""/>佛缘之路官方微信服务号</p>
+                </li>
+                <li class="clearfix ul_3_li2"><p class="p1 left"><a href="#">关注我们：</a></p>
+                    <a class="left" href="http://weibo.com/u/5313648758"><img src="img/footer_ico1.png" width="57" height="57" alt=""/></a>
+                    <a class="left" href="http://t.qq.com/foyuanzhilu"><img src="img/footer_ico2.png" width="57" height="57" alt=""/></a>
+                    <a class="left" href="http://user.qzone.qq.com/3451848524?ptlang=2052" ><img src="img/footer_ico3.png" width="57" height="57" alt=""/></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_new2 clearfix">
+            <p class="p1"><a href="#">友情链接：</a></p>
+            <span><a href="http://fo.ifeng.com">凤凰网佛教频道 </a></span>
+            <span><a href="http://www.fblife.com">越野e族 </a></span>
+            <span><a href="http://foxue.qq.com/">腾讯新闻 </a></span>
+            <span><a href="http://fo.sina.com.cn/">新浪佛学 </a></span>
+            <span><a href="http://www.fobao.cn/">佛宝网 </a></span>
+        </div>  
+    </div>
+</div>
+<div class="footer">
+    <div class="block clearfix">
+        <div style="width:200px; white-space:nowrap;text-align: left;margin-left:50px;"><img src="img/logo_footer.jpg" alt=""></div>
+        <div class="foot_sm" style="width:700px;">佛缘之路所有版权归原作者所有，任何商业用途均需联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权益。京ICP备19015254号-2</div>
+        <div  style="margin-bottom:10px; white-space:nowrap;float:right;text-align: right;">
+        	<!--<script id="ebsgovicon" src="http://szcert.ebs.org.cn/govicon.js?id=9d2b47c9-d022-46ca-8fc8-afcf0ed1c068&width=75&height=90&type=1" type="text/javascript" charset="utf-8"></script>-->  
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/main1.js"></script>
+<script>
+		
+	$(document).ready(function() {
+		$.ajax({
+		type:"get",
+		url:"https://api.foyuanzhilu.com/v1/painting/type/20",
+		async:true,
+		dataType: 'json',
+		success: function(res) {
+			$.each(res, function(idx, val) {
+				var datail = 'https://api.foyuanzhilu.com/v1/painting/1224'
+				var str = '<a target="_blank" href="BYdetail.html?id=' + val.id + '"><li><img src="' + val.thumb_image + '" /><br /><span>' + val.title + '</span></li></a>'
+				var str1 = ""
+				str1 += str
+				$('.Byxfstamp').append(str1)
+			});
+		},
+		complete: function() {
+			$("body").css("overflow","auto")
+			$("#loadingDiv").css("display","none");
+		}
+	});
+				$('body').scroll(function() {
+        	if($('.essay_right').length){
+						if($('body').scrollTop()<240){
+							$('.essay_right').removeClass('sc2').addClass('sc1');
+						}else{
+							$('.essay_right').removeClass('sc1').addClass('sc2');
+						}
+						if($('body').scrollTop() > $(document).height()-616){
+							console.log($(document).height())
+							$('.essay_right').fadeOut();
+						}else{
+							$('.essay_right').fadeIn();
+						}
+					}
+        })
+	})
+	
+</script>
+	</body>
+</html>
