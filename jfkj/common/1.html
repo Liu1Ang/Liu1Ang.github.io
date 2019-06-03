@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+	</head>
+	<body>
+		<div class="swiper-container">
+						    <div class="swiper-wrapper">
+						      <div class="swiper-slide">
+						      		<li>
+										<a href="about.html">
+											<i><img src="common/img/nav1.jpg"/></i>
+											<p>公司简介</p>
+										</a>
+									</li>
+						      </div>
+						      <div class="swiper-slide">
+						      		<li>
+										<a href="about/news.html">
+											<i><img src="common/img/nav2.jpg"/></i>
+											<p>公司新闻</p>
+										</a>
+									</li>
+						      </div>
+						      <div class="swiper-slide">
+						      		<li>
+										<a href="about/portal.html">
+											<i><img src="common/img/nav3.jpg"/></i>
+											<p>投资者关系</p>
+										</a>
+									</li>
+						      </div>
+						      <div class="swiper-slide">
+						      		<li>
+										<a href="about/qaeda.html">
+											<i><img src="common/img/nav4.jpg"/></i>
+											<p>基地介绍</p>
+										</a>
+									</li>
+						      </div>
+						      <div class="swiper-slide">
+						      		<li>
+										<a href="about/contact.html">
+											<i><img src="common/img/nav5.jpg"/></i>
+											<p>文化生活</p>
+										</a>
+									</li>
+						      </div>
+						      <div class="swiper-slide">
+						      		<li>
+										<a href="about/join.html">
+											<i><img src="common/img/nav6.jpg"/></i>
+											<p>加入金发</p>
+										</a>
+									</li>
+						      </div>
+						      <div class="swiper-slide">
+						      		<li>
+										<a href="about/contact.html">
+											<i><img src="common/img/nav7.jpg"/></i>
+											<p>联系我们</p>
+										</a>
+									</li>
+						      </div>
+						    </div>
+						   <!-- Add Pagination -->
+						    <div class="swiper-pagination"></div>
+						    <!-- Add Arrows -->
+						    <div class="swiper-button-next"></div>
+						    <div class="swiper-button-prev"></div>
+					    </div>
+					      <!-- Swiper JS -->
+  <script src="js/nav.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 6,
+      spaceBetween: 30,
+      slidesPerGroup:3,
+      loop: false,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+	</body>
+</html>

@@ -1,0 +1,272 @@
+@charset "UTF-8";
+@import url(style.css);
+@import url(slick.css);
+@import url(animate.css);
+@import url(swiper.css);
+@import url(jquery.mCustomScrollbar.css);
+@import url(../fonts/iconfont.css);
+
+@font-face
+{
+  font-family: BebasNeue;
+  src: url('../fonts/BebasNeue.otf')
+}
+
+.aplayer-narrow {}
+.aplayer-narrow .aplayer-info {width:37%}
+.aplayer-withlrc.aplayer-narrow {}
+/*.aplayer-withlrc.aplayer .aplayer-pic {}*/
+.aplayer-withlrc.aplayer .aplayer-info {height:386px}
+.aplayer-withlrc.aplayer .aplayer-lrc {display:block}
+
+.aplayer [class*=" aplayer-icon-"]:before,.aplayer [class^=aplayer-icon-]:before {
+  font-family:aplayer-fontello;
+  font-style:normal;
+  font-weight:400;
+  display:inline-block;
+  text-decoration:inherit;
+  width:1em;
+  text-align:center;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1em
+}
+.aplayer .aplayer-lrc-content,.aplayer .aplayer-pic .aplayer-hide {
+  display:none
+}
+
+.aplayer span {
+  cursor:default!important
+}
+.aplayer .aplayer-pic {
+  position:relative;
+  float:left;
+  width: 63%
+
+}
+.aplayer .aplayer-pic img {
+  height:100%;
+  width:100%
+}
+.aplayer .aplayer-pic .aplayer-button {
+  position:absolute;
+  color:#fff;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  opacity:.8;
+  cursor:pointer;
+  text-shadow:0 1px 1px rgba(0,0,0,.2);
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,.2);
+  box-shadow:0 1px 1px rgba(0,0,0,.2);
+  background:rgba(0,0,0,.2)
+}
+.aplayer .aplayer-pic .aplayer-button:hover {
+  opacity:1
+}
+.aplayer .aplayer-pic .aplayer-play {
+  width:50px;
+  height:51px;
+  top:78%;
+  right: 30%;
+  background:url(../img/playerMusic.png) no-repeat;
+}
+.aplayer .aplayer-pic .aplayer-play .aplayer-icon-play {}
+.aplayer .aplayer-pic .aplayer-pause {
+  width:50px;
+  height:51px;
+  top:78%;
+  right: 30%;
+  background:url(../img/stop.png) no-repeat;
+}
+.aplayer .aplayer-pic .aplayer-pause .aplayer-icon-pause {}
+.aplayer .aplayer-info {
+
+  float: left;
+  height:66px;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+}
+.aplayer .aplayer-info .aplayer-music {
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  margin-bottom:17px
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+  font-size:14px;
+  display:block;
+  text-align: center;
+  font-size: 25px;
+  color: #603812;
+  font-weight: bold;
+}
+.aplayer .aplayer-info .aplayer-music .aplayer-author {
+  font-size:12px;
+  text-align: center;
+  margin: 15px 0;
+  display:block;
+  font-size: 18px;
+  color: #f89d09;
+}
+.aplayer .aplayer-info .aplayer-controller {
+  position:relative
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+  margin:0 120px 0 5px
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
+  position:relative;
+  height:2px;
+  width:100%;
+  background:#cdcdcd;
+  cursor:pointer!important
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  background:#aaa;
+  height:2px;
+  -webkit-transition:all .5s ease;
+  transition:all .5s ease
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  background:#b7daff;
+  height:2px
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+  position:absolute;
+  top:0;
+  right:5px;
+  margin-top:-4px;
+  margin-right:-10px;
+  height:8px;
+  width:8px;
+  border:1px solid #b7daff;
+  -webkit-border-radius:50%;
+  border-radius:50%;
+  background:#fff;
+  cursor:pointer!important
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb:hover {
+  background:#b7daff
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-time {
+  position:absolute;
+  right:0;
+  bottom:-5px;
+  height:17px;
+  color:#999;
+  font-size:11px
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-time i {
+  color:#666;
+  font-size:15px
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap {
+  display:inline-block;
+  margin-left:7px;
+  cursor:pointer!important
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap:hover .aplayer-volume-bar-wrap {
+  display:block
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap {
+  display:none;
+  position:absolute;
+  bottom:17px;
+  right:-5px;
+  width:25px;
+  height:40px;
+  z-index:99
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar {
+  position:absolute;
+  bottom:0;
+  right:10px;
+  width:5px;
+  height:35px;
+  background:#aaa
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar .aplayer-volume {
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:5px;
+  background:#b7daff
+}
+.aplayer .aplayer-lrc {
+
+  position:relative;
+  height: 277px;
+  background:#fff;
+  text-align:center;
+  overflow:hidden;
+  margin:-10px 0 10px
+}
+.aplayer .aplayer-lrc:after,.aplayer .aplayer-lrc:before {
+  position:absolute;
+  z-index:1;
+  display:block;
+  overflow:hidden;
+  content:' ';
+  width:100%
+}
+.aplayer .aplayer-lrc:before {
+  top:0;
+  height:10%;
+  background:-webkit-linear-gradient(top,#fff 0,rgba(255,255,255,0) 100%);
+  background:-webkit-gradient(linear,left top,left bottom,from(white),to(rgba(255,255,255,0)));
+  background:linear-gradient(to bottom,#fff 0,rgba(255,255,255,0) 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',endColorstr='#00ffffff',GradientType=0 )
+}
+.aplayer .aplayer-lrc:after {
+  bottom:0;
+  height:33%;
+  background:-webkit-linear-gradient(bottom,#fff 0,rgba(255,255,255,0) 100%);
+  background:-webkit-gradient(linear,left bottom,left top,from(white),to(rgba(255,255,255,0)));
+  background:linear-gradient(to top,#fff 0,rgba(255,255,255,0) 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0 )
+}
+.aplayer .aplayer-lrc p {
+  font-size:14px;
+  color:#999999;
+  line-height:30px;
+  padding:0;
+  margin:0;
+  -webkit-transition:all .5s ease-out;
+  transition:all .5s ease-out;
+  opacity:.8
+}
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  opacity:1;
+  color: #f89d09;
+}
+.aplayer .aplayer-lrc .aplayer-lrc-contents {
+  width:100%;
+  -webkit-transition:all .5s ease-out;
+  transition:all .5s ease-out
+}
+
+
+@media screen and (max-width:1400px) {
+
+  .aplayer-withlrc.aplayer .aplayer-info{height: 332px}
+  .aplayer .aplayer-lrc{height: 223px}
+
+}
+
+
+@media screen and (max-width:768px) {
+
+  .aplayer .aplayer-pic{float: none;width: 100%;}
+  .aplayer .aplayer-info .aplayer-music .aplayer-title{font-size: 18px;}
+  .aplayer .aplayer-info .aplayer-music .aplayer-author{font-size: 16px;margin: 5px 0;}
+  .aplayer-withlrc.aplayer .aplayer-info{float: none;width: 100%;margin-top: 20px;}
+}

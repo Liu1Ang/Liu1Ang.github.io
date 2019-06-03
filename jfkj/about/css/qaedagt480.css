@@ -1,0 +1,647 @@
+/*header start*/
+.header_wrap{
+	padding:20px;
+	height: 23px;
+	background: #FFFFFF;
+	z-index: 22;
+	position: relative;
+	right: 0;
+	box-shadow: 0 5px 5px #E8E9E9;
+}
+.header{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.header h1{
+	width:200px;
+	float: left;
+}
+.header h1 a{
+	display: block;
+}
+.header h1 img{
+	display: block;
+	width: 100%;
+}
+.header .pc{
+	display: none;
+}
+.header .he-right{
+	display: none;
+}
+.header #ulbtn{
+	width: 33px;
+	height: 33px;
+	float: right;
+	margin: 0 5%;
+	cursor: pointer;
+}
+.header #ulbtn>span{
+	width: 33px;
+	display: block;
+	height: 0px;
+	border-bottom: 3px solid #f09319;
+	border-radius: 3px;
+	position: relative;
+}
+.header #ulbtn>span:before{
+	content: '';
+	width: 33px;
+	height: 0px;
+	border-bottom: 3px solid #f09319;
+	border-radius: 3px;
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+.header #ulbtn>span:after{
+	content: '';
+	width: 33px;
+	height: 0px;
+	border-bottom: 3px solid #f09319;
+	border-radius: 3px;
+	position: absolute;
+	top: 16px;
+	left: 0;
+}
+.header #btnx{
+	width: 33px;
+	height: 33px;
+	float: right;
+	margin: 0 5%;
+	cursor: pointer;
+}
+.header #btnx>span:nth-of-type(1){
+	width: 33px;
+	display: block;
+	height: 0px;
+	border-bottom: 3px solid #f09319;
+	border-radius: 3px;
+	transform-origin: 2px 11px;
+	transform: rotate(49deg);
+}
+.header #btnx>span:nth-of-type(2){
+	display: block;
+	width: 33px;
+	height: 0px;
+	border-bottom: 3px solid #f09319;
+	border-radius: 3px;
+	transform-origin: 29px 7px;
+	transform: rotate(-48deg);
+}
+.header .collapse{
+	width: 50%;
+	padding: 20px 0;
+	height: 100%;
+	border-left: 2px solid #ee7700;
+	background: #3a3a3a;
+	position: fixed;
+	top: 0;
+	right: -51%;
+}
+.header .collapse li{
+	width: 100%;
+	background: #323232;
+	text-align: center;
+}
+.header .collapse li>a{
+	color: #fff;
+	font-size: 15px;
+	border-bottom: 1px solid #3a3a3a;
+	display: block;
+	padding: 10px 0;
+	position: relative;
+	right: 0%;
+}
+.header .collapse li:hover>a{
+	color: #F0951E;
+}
+.header .collapse li:hover>a:after{
+	border-color: #F0951E;
+}
+.header .collapse li>a:after{
+	content: '';
+	width: 7px;
+	height: 7px;
+	margin-left: 10px;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 30%;
+	left: center;
+}
+.header .collapse li:nth-of-type(3) a:after{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-bottom: 0px solid #FFFFFF;
+	border-left: 0px solid #FFFFFF;
+}
+.header .collapse li dl{
+	width: 100%;
+	padding-left: 15%;
+	text-align: center;	
+	display: none;
+}
+.header .collapse li dl dd>a{
+	display: block;
+	border-bottom: 1px solid #3a3a3a;
+	font-size: 14px;
+	color: #fff;
+	padding: 10px 0;
+}
+.header .collapse li dl dd:hover>a{
+	color: #F0951E;
+}
+/*=====================================================banner start*/
+.banner_wrap{
+	width: 100%;
+	height: 200px;
+}
+.banner{
+	width:100%;
+	margin: 0 auto;
+	height: 200px;
+	background: url(../img/j5.jpg) no-repeat center;
+	background-size: cover;
+}
+/*=====================================================subnav start*/
+.subnav_wrap{
+	width: 60%;
+	height: 100%;
+	background: #f6f6f6;
+	z-index: 33;
+	position: fixed;
+	top: 0;
+	left:-60%;
+	transition: all 0.5s;
+}
+.subnav{
+	width: 96%;
+	margin: 0 auto;
+}
+.subnav i{
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 50%;
+	right: -32px;
+	background: #F6F6F6;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.subnav i img{
+	display: block;
+	margin:7.5px auto;
+}
+.subnav ul{
+	width: 100%;
+	height: 100%;
+}
+.subnav ul li{
+	padding: 15px 0 15px 25px;
+	background: url(../../img/com_06.png) no-repeat 89% 22px;
+	font-size: 14px;
+	color: #333333;
+	position: relative;
+	cursor: pointer;
+}
+.subnav ul li:first-of-type{
+	display: none;
+}
+.subnav ul li dl{
+	width: 100%;
+	border-left: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+	border-top: 1px solid #ededed;
+	background: #FFFFFF;
+	display: none;
+	margin-left: -25px;
+	margin-top: 10px;
+}
+.subnav ul li dl dd{
+	border-bottom: 1px solid #ededed;
+}
+.subnav ul li dl dd a{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 25px;
+	display: block;
+	font-size: 14px;
+	color: #333333;
+}
+.subnav ul li dl dd:hover a{
+	color: #F0951E;
+}
+/*==========================================main start*/
+.main_wrap{
+	padding: 0 15px;
+}
+.main_wrap .main{
+	width: 100%;
+	margin: 0 auto;
+}
+.main_wrap .main .main_top{
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.main_wrap .main .main_top h2{ 
+	font-size: 24px;
+	color: #333333;
+	text-align: center;
+	font-weight: bold;
+}
+.main_wrap .main .main_top p{ 
+	text-align: center;
+	font-size: 16px;
+	color: #999999;
+	margin-top: 15px;
+}
+.main_wrap .main .main_bottom{
+	width:100%;
+}
+.main_wrap .main .main_bottom #qaeda{
+	border-top: 1px solid #d7d7d7;
+	border-left: 1px solid #d7d7d7;
+	margin: 0 auto;
+}
+.main_wrap .main .main_bottom #qaeda li{
+	padding: 10px 0;
+	width: calc(50% - 1px);
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	color: #333333;
+	border-bottom: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+	border-top: 2px solid #fff;
+	cursor: pointer;
+}
+.main .main_bottom #map .map1{
+	display: none;
+}
+.main .main_bottom #map .map_top{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	top: 0;
+	left:0;
+}
+.main .main_bottom #map .map_top i{
+	display: block;
+	width: 100%;
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+}
+.main .main_bottom #map .map_top i img{
+	display: block;
+	width: 100%;
+}
+.main .main_bottom #map .map_top .tian{
+	position: absolute;
+	top:37%;
+	left: 59.83%;
+}
+.main .main_bottom #map .map_top .si{
+	position: absolute;
+	top:56%;
+	left: 51.08%;
+}
+.main .main_bottom #map .map_top .jiang{
+	position: absolute;
+	top:54%;
+	left: 63.66%;
+	z-index: 5;
+}
+.main .main_bottom #map .map_top .hai{
+	position: absolute;
+	top:55%;
+	left: 64.58%;
+}
+.main .main_bottom #map .map_top .cheng{
+	position: absolute;
+	top:58%;
+	left: 50.5%;
+}
+.main .main_bottom #map .map_top .wu{
+	position: absolute;
+	top:60%;
+	left: 57.66%;
+}
+.main .main_bottom #map .map_top .guang{
+	position: absolute;
+	top:70%;
+	left: 58.5%;
+}
+.main .main_bottom #map .map_top .mei{
+	position: absolute;
+	top:25%;
+	left: 61.16%;
+}
+.main .main_bottom #map .map_top .ou{
+	position: absolute;
+	top:54%;
+	left: 38.66%;
+}
+.main .main_bottom #map .map_top .yin1{
+	position: absolute;
+	top:40%;
+	left: 55.33%;
+}
+.main .main_bottom #map .map_top .yin2{
+	position: absolute;
+	top:79%;
+	left: 44.16%;
+}
+.main .main_bottom #map .map_top .yin3{
+	position: absolute;
+	top:82.5%;
+	left: 46.66%;
+}
+.main .main_bottom #map .map_top .mei1{
+	position: absolute;
+	top:39.5%;
+	left: 27.91%;
+}
+.main .main_bottom #map .map_top .ou1{
+	position: absolute;
+	top:36.5%;
+	left: 48.63%;
+}
+.main .main_bottom #map .map_top .yin11{
+	position: absolute;
+	top:50%;
+	left: 63.8%;
+}
+.main .main_bottom #map .map_top .yin22{
+	position: absolute;
+	top:53.5%;
+	left: 64.0%;
+}
+.main .main_bottom #map .map_top .yin33{
+	position: absolute;
+	top:57%;
+	left: 64.5%;
+}
+.main .main_bottom #map .map_top .tian1{
+	position: absolute;
+	top:15%;
+	left: 86%;
+}
+.main .main_bottom #map .map_top .si1{
+	position: absolute;
+	top:28%;
+	left: 80%;
+}
+.main .main_bottom #map .map_top .jiang1{
+	position: absolute;
+	top:27%;
+	left: 88.3%;
+}
+.main .main_bottom #map .map_top .hai1{
+	position: absolute;
+	top:28%;
+	left: 89%;
+	z-index: 3;
+}
+.main .main_bottom #map .map_top .cheng1{
+	position: absolute;
+	top:29%;
+	left: 79%;
+}
+.main .main_bottom #map .map_top .wu1{
+	position: absolute;
+	top:29%;
+	left: 86%;
+}
+.main .main_bottom #map .map_top .guang1{
+	position: absolute;
+	top:37.5%;
+	left: 85%;
+}
+.main .main_bottom #map .map_top >div >div em{
+	display: block;
+	width: 21px;
+	height: 21px;
+	background: url(../img/ding.png) no-repeat;
+	background-size: cover;
+}
+.main .main_bottom #map .map_top >div >div>div{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 290px;
+	padding:26px;
+	background: #FFFFFF;
+	box-shadow: 0 0 20px #b8b8b8;
+	display: none;
+	z-index: 5;
+}
+.main .main_bottom #map .map_top >div >div:hover div{
+	display: block;
+}
+.main .main_bottom #map .map_top >div >div>div h3{
+	font-size: 20px;
+	color: #333333;
+}
+.main .main_bottom #map .map_top >div >div>div p{
+	font-size: 14px;
+	color: #999999;
+	margin-top: 15px;
+}
+.main .main_bottom #map .map_top >div >div>div p:last-of-type{
+	margin-top: 20px;
+}
+.main .main_bottom #map .map_top >div >div>div p a{
+	color: #f0951e;
+	font-size: 14px;
+}
+.main .main_bottom #map .map_bottom{
+	width: 98%;
+	margin: 0 auto;
+}
+.main .main_bottom #map .map_bottom>p{
+	width: 100%;
+	font-size: 24px;
+	color: #333333;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	margin-top: 30px;
+}
+.main .main_bottom #map .map_bottom>p:after{
+	content: '';
+	display: block;
+	width: 30px;
+	height: 2px;
+	background: #f0951e;
+	position: absolute;
+	top:-30px;
+	left: calc(50% - 15px);
+}
+.main .main_bottom #map .map_bottom>div{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.main .main_bottom #map .map_bottom>div>div{
+	margin: 0 1%;
+	padding:35px 0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.main .main_bottom #map .map_bottom>div>div:first-of-type{
+	padding-top: 0;
+}
+.main .main_bottom #map .map_bottom>div>div h3{
+	width: 100%;
+	font-size: 18px;
+	color: #333333;
+}
+.main .main_bottom #map .map_bottom>div>div dl{
+	width: 100%;
+	margin-top: 20px;
+}
+.main .main_bottom #map .map_bottom>div>div dl dd{
+	padding-left: 18px;
+	font-size: 14px;
+	color: #333333;
+	position: relative;
+	margin-bottom: 10px;
+}
+.main .main_bottom #map .map_bottom>div>div dl dd:after{
+	content: '';
+	width:3px;
+	height: 3px;
+	background: #f0951e;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 6px;
+}
+.main .main_bottom #map .map_bottom>div>div dl dd span{
+	font-size: 14px;
+	color: #999999;
+	margin-right: 10px;
+}
+.main .main_bottom #map .map_bottom>div>div p{
+	margin-top: 20px;
+	border: 2px solid #979797;
+	width: 93px;
+	height: 28px;
+	background: url(../img/downlon.jpg) no-repeat 90% 50%;
+	text-align: center;
+	line-height: 28px;
+}
+.main .main_bottom #map .map_bottom>div>div p a{
+	font-weight: bold;
+	font-size: 14px;
+	color: #ef9014;
+}
+/*============================================mainbot start*/
+.mainbot_wrap{
+	width: 100%;
+}
+.mainbot_wrap .mainbot{
+	width: 100%;
+	margin: 0 auto;
+}
+.mainbot_wrap .mainbot>div{
+	width: 100%;
+	margin-top: 10px;
+	position: relative;
+}
+.mainbot_wrap .mainbot>div a i{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.mainbot_wrap .mainbot>div a i img{
+	display: block;
+	width: 100%;
+}
+.mainbot_wrap .mainbot>div a h3{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #ffffff;
+	position: absolute;
+	top: 21.9%;
+	left: 0;
+}
+.mainbot_wrap .mainbot>div a span{
+	width: 20px;
+	height: 20px;
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+	position: absolute;
+	top: 45.37%;
+	left:calc(50% - 13px);
+}
+.mainbot_wrap .mainbot>div a span:after{
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-bottom: 2px solid #FFFFFF;
+	border-right: 2px solid #FFFFFF;
+	display: block;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: calc(50% - 6px);
+	left:calc(50% - 8px);
+}
+/*=====================================================footer start*/
+.footer{
+	width: 100%;
+	margin: 0 auto;
+}
+.footer .footer_top{
+	padding:25px 0;
+}
+.footer .footer_top dl{
+	display: none;
+}
+.footer .footer_top dl:nth-of-type(4){
+	margin: 0 auto;
+	font-size: 16px;
+	color: #2a2a2a;
+	display: block;
+	text-align: center;
+}
+.footer .footer_top dl img{
+	display: block;
+	width: 105px;
+	margin: 0 auto;
+}
+.footer .footer_top dl dt{
+	margin-bottom: 25px;
+}
+.footer .footer_top dl:nth-of-type(4) dd{
+	text-align: center;
+	font-size: 14px;
+	color: #8f8f8f;
+}
+.footer .footer_top dl:nth-of-type(4) dd:last-of-type{
+	margin-top: 10px;
+}
+.footer_wrap .footer_bot{
+	width: 96%;
+	padding: 15px 2%;
+    background: #f4f4f4;
+}
+.footer_wrap .footer_bot p{
+	width: 100%;
+	float: left;
+	text-align: left;
+	font-size: 14px;
+	color: #797979;
+	padding: 10px 0px;
+}
+.footer_wrap .footer_bot p a{
+	font-size: 14px;
+	color: #797979;
+}
