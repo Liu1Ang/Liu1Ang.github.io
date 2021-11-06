@@ -1,0 +1,25 @@
+/* 相关视频内容 */
+.xgsp-cons{
+  margin: 10px auto 50px;
+}
+.xgsp-cons .video-lists{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.xgsp-cons .video-lists .list{
+  width: 350px;
+  margin-bottom: 40px;
+}
+.xgsp-cons .video-lists .list .video{
+  width: 100%;
+}
+.xgsp-cons .video-lists .list p{
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}

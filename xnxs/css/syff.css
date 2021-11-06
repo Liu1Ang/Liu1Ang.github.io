@@ -1,0 +1,63 @@
+/* 实验方法与步骤要求 */
+.syff-cons{
+  margin: 10px auto 50px;
+}
+.syff-cons .syffms p{
+  margin-top: 10px;
+  text-indent: 28px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+.syff-cons .syffyq{
+  margin-top: 20px;
+}
+.syff-cons .syffyq dl{
+  width: 100%;
+  margin-top: 10px;
+}
+.syff-cons .syffyq dl dt{
+  margin-top: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+.syff-cons .syffyq dl dd{
+  margin-left: 23px;
+  font-size: 14px;
+  color: #666;
+  line-height: 26px;
+}
+.syff-cons .syffyq dl dd b{
+  position: relative;
+  display: block;
+  margin-top: 5px;
+  padding-left: 15px;
+  font-weight: normal;
+}
+.syff-cons .syffyq dl dd b:before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #666;
+  border-radius: 50%;
+}
+.syff-cons .syffyq .xxgc-tit{
+  margin-top: 10px;
+}
+.syff-cons .syffyq .xxgc-dd img{
+  width: 600px;
+  margin: 0 auto;
+}
+.syff-cons .syffyq .xxgc-dd span{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}

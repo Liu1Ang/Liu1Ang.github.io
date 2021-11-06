@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>实验教学</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/syjx.css">
+
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-migrate-1.0.0.js"></script>
+  <script type="text/javascript" src="js/jquery.media.js"></script>
+</head>
+<body>
+<!-- top -->
+<div class="top w1200">
+  <img src="images/top.jpg" alt="">
+</div>
+
+<!-- nav -->
+<div class="nav w1200">
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li><a href="javascript: void(0);">|</a></li>
+    <li><a href="syjs.html">实验介绍</a></li>
+    <li><a href="javascript: void(0);">|</a></li>
+    <li><a href="jxtd.html">教学团队</a></li>
+    <li><a href="javascript: void(0);">|</a></li>
+    <li><a href="syyl.html">实验原理</a></li>
+    <li><a href="javascript: void(0);">|</a></li>
+    <li><a href="syff.html">实验方法与步骤要求</a></li>
+    <li><a href="javascript: void(0);">|</a></li>
+    <li class="active"><a href="#">实验教学</a></li>
+    <li><a href="javascript: void(0);">|</a></li>
+    <li><a href="cgzs.html">成果与展示</a></li>
+    <li><a href="javascript: void(0);">|</a></li>
+    <li><a href="xgsp.html">相关视频</a></li>
+  </ul>
+</div>
+
+<!-- 实验教学内容 -->
+<div class="syjx-cons w1200">
+  <div class="left">
+    <div class="title-com2">
+      <h2>实验教学</h2>
+    </div>
+    <ul>
+      <li sp="0" class="on">导视系统设计教学课件</li>
+      <li sp="1">计算机图形学与虚拟现实环境</li>
+      <li sp="2">虚拟现实技术</li>
+      <li sp="3">虚拟现实技术概述(PPT-30张)</li>
+      <li sp="4">虚拟现实课件ppt</li>
+      <li sp="5">优秀导视设计范例欣赏</li>
+    </ul>
+  </div>
+
+  <div class="right">
+    <h3>导视系统设计教学课件</h3>
+    <div class="panel-body">
+      <a class="media" href="pdf/pdf1.pdf"></a>
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<div class="footer w1200">
+  <p>合肥师范学院版权所有 地址：合肥市金寨路327号（三孝口校区） 合肥市经济开发区莲花路1688号（锦绣校区） 皖ICP备15000025号</p>
+</div>
+
+<script>
+    $('a.media').media({width:800, height:600});
+
+    var pdfLists = [
+        {
+            title: '导视系统设计教学课件',
+            pdf: 'pdf/pdf1.pdf'
+        },
+        {
+            title: '计算机图形学与虚拟现实环境',
+            pdf: 'pdf/pdf2.pdf'
+        },
+        {
+            title: '虚拟现实技术',
+            pdf: 'pdf/pdf3.pdf'
+        },
+        {
+            title: '虚拟现实技术概述(PPT-30张)',
+            pdf: 'pdf/pdf4.pdf'
+        },
+        {
+            title: '虚拟现实课件ppt',
+            pdf: 'pdf/pdf5.pdf'
+        },
+        {
+            title: '优秀导视设计范例欣赏',
+            pdf: 'pdf/pdf6.pdf'
+        }
+    ]
+
+    $(function() {
+        $('.syjx-cons .left ul li').on('click',function () {
+            $(this).addClass('on').siblings().removeClass('on');
+            var that = $(this);
+
+            for(x in pdfLists){
+                if(that.attr('sp')===x){
+                    $('.right').html('<h3>' + pdfLists[x].title + '</h3>\n' +
+                        '    <div class="panel-body">\n' +
+                        '      <a class="media" href="' + pdfLists[x].pdf + '"></a>\n' +
+                        '    </div>')
+
+                    $('a.media').media({width:800, height:600});
+                }
+
+            }
+        })
+    });
+</script>
+
+</body>
+</html>

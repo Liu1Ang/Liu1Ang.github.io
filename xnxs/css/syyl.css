@@ -1,0 +1,38 @@
+/* 实验原理内容 */
+.syyl-cons{
+  margin: 10px auto 50px;
+}
+.syyl-cons .txt{
+  width: 100%;
+  margin-top: 10px;
+  text-indent: 28px;
+  font-size: 14px;
+  color: #666666;
+  line-height: 26px;
+  letter-spacing: 2px;
+}
+.syyl-cons .syyl-pic{
+  width: 800px;
+  margin: 0 auto;
+}
+.syyl-cons .syyl-pic img{
+  width: 100%;
+}
+.syyl-cons .syyl-pic .tit{
+  margin-top: 16px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+.syyl-cons .knows{
+  margin-top: 30px;
+}
+.syyl-cons .knows li{
+  line-height: 26px;
+  font-size: 14px;
+  color: #666;
+}
+.mt30{
+  margin-top: 30px;
+}

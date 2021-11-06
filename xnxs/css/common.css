@@ -1,0 +1,280 @@
+body,
+html {
+  font-family: "Microsoft YaHei";
+  background: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+select,
+textarea,
+input {
+  /*鐟欙絽鍠呯悰銊ュ礋鐎硅棄瀹虫稉宥勭閼峰娈戦梻顕€顣�*/
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+}
+
+address,
+caption,
+cite,
+code,
+em,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+strong,
+th {
+  font-weight: 400;
+  font-style: normal;
+}
+
+dd,
+dl,
+dt,
+li,
+ul {
+  list-style: none;
+}
+
+fieldset,
+iframe,
+img {
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+video {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+input,
+select {
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+input[type=text] {
+  background-position-y: -1px;
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+address,
+cite,
+em,
+var {
+  font-style: normal;
+}
+
+.clearFix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.clearFix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #BA8D78;
+}
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #BA8D78;
+}
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #BA8D78;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #BA8D78;
+}
+
+
+/* common */
+.w1200{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* top */
+.top img{
+  width: 100%;
+}
+
+/* nav */
+.nav{
+  height: 50px;
+  margin: 0 auto 3px;
+  background: #02b2b5;
+}
+.nav ul{
+  display: flex;
+  margin-left: 20px;
+}
+.nav ul li{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 8px;
+}
+.nav ul li a{
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-family: 微软雅黑;
+}
+.nav ul li:hover a,
+.nav ul li.active a{
+  text-decoration: underline;
+}
+
+/* 标题 */
+.title-com1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background: #02b2b5;
+}
+.title-com1 h2{
+  margin-left: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+.title-com1 a{
+  display: block;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/jiantou1.png") no-repeat;
+  background-size: 100% 100%;
+}
+.title-com2{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.title-com2 h2{
+  position: relative;
+  margin-left: 5px;
+  padding-left: 15px;
+  color: #02b2b5;
+  font-size: 16px;
+}
+.title-com2 h2:before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 5px;
+  height: 16px;
+  background: #02b2b5;
+}
+
+/* 当前位置 */
+.dqwz{
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed rgba(204,204,204,.5);
+}
+.dqwz li,
+.dqwz li a{
+  color: #666;
+  font-size: 12px;
+  line-height: 35px;
+  font-family: serif;
+}
+.dqwz li:hover a{
+  color: #02b2b5;
+}
+
+/* footer */
+.footer{
+  height: 60px;
+  line-height: 60px;
+  margin-top: 10px;
+  text-align: center;
+  background: #02b2b5;
+}
+.footer p{
+  font-size: 14px;
+  color: #fff;
+}

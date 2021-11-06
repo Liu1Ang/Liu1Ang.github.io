@@ -1,0 +1,38 @@
+/* 成果与展示内容 */
+.cgzs-cons{
+  margin: 10px auto 50px;
+}
+.cgzs-cons .shiyan-pic,
+.cgzs-cons .shiyan-zs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+}
+.cgzs-cons .shiyan-pic li,
+.cgzs-cons .shiyan-zs li{
+  width: 385px;
+  height: 200px;
+  margin-bottom: 22px;
+}
+.cgzs-cons .shiyan-pic li img,
+.cgzs-cons .shiyan-zs li img{
+  width: 100%;
+  height: 100%;
+}
+
+.cgzs-cons .shiyan-zs2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cgzs-cons .shiyan-zs2 li{
+  width: 221px;
+  height: 389px;
+}
+.cgzs-cons .shiyan-zs2 li img{
+  width: 100%;
+  height: 100%;
+}
