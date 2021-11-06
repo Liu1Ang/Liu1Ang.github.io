@@ -13,7 +13,7 @@
   line-height: 40px;
   color: #fff;
   font-size: 16px;
-  background: #02b2b5;
+  background: #4267c1;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -57,10 +57,10 @@
 }
 .jxtd-cons .contentLi ul li:hover h4,
 .jxtd-cons .contentLi ul li:hover span{
-  color: #02b2b5;
+  color: #4267c1;
 }
 .jxtd-cons .contentLi ul li:hover h4:before{
-  background: #02b2b5;
+  background: #4267c1;
 }
 
 

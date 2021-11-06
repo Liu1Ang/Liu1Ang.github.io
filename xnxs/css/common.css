@@ -175,9 +175,11 @@ input:-ms-input-placeholder {
 
 /* nav */
 .nav{
+  display: flex;
+  justify-content: center;
   height: 50px;
   margin: 0 auto 3px;
-  background: #02b2b5;
+  background: #4267c1;
 }
 .nav ul{
   display: flex;
@@ -207,7 +209,7 @@ input:-ms-input-placeholder {
   width: 100%;
   height: 45px;
   line-height: 45px;
-  background: #02b2b5;
+  background: #4267c1;
 }
 .title-com1 h2{
   margin-left: 10px;
@@ -233,7 +235,7 @@ input:-ms-input-placeholder {
   position: relative;
   margin-left: 5px;
   padding-left: 15px;
-  color: #02b2b5;
+  color: #4267c1;
   font-size: 16px;
 }
 .title-com2 h2:before{
@@ -244,7 +246,7 @@ input:-ms-input-placeholder {
   content: '';
   width: 5px;
   height: 16px;
-  background: #02b2b5;
+  background: #4267c1;
 }
 
 /* 当前位置 */
@@ -263,7 +265,7 @@ input:-ms-input-placeholder {
   font-family: serif;
 }
 .dqwz li:hover a{
-  color: #02b2b5;
+  color: #4267c1;
 }
 
 /* footer */
@@ -272,7 +274,7 @@ input:-ms-input-placeholder {
   line-height: 60px;
   margin-top: 10px;
   text-align: center;
-  background: #02b2b5;
+  background: #4267c1;
 }
 .footer p{
   font-size: 14px;

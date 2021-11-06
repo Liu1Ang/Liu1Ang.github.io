@@ -12,15 +12,15 @@
   width: 100%;
 }
 .swiper .swiper-container .swiper-button-next{
-  width: 40px;
-  height: 40px;
-  background: url("../images/next.png") no-repeat;
+  width: 50px;
+  height: 50px;
+  background: url("../images/next1.png") no-repeat;
   background-size: 100% 100%;
 }
 .swiper .swiper-container .swiper-button-prev{
-  width: 40px;
-  height: 40px;
-  background: url("../images/prev.png") no-repeat;
+  width: 50px;
+  height: 50px;
+  background: url("../images/prev1.png") no-repeat;
   background-size: 100% 100%;
 }
 .swiper .swiper-container .swiper-pagination{
@@ -47,7 +47,7 @@
   opacity: 1;
 }
 .swiper .swiper-container .swiper-pagination .swiper-pagination-bullet-active{
-  background: #02b2b5;
+  background: #4267c1;
 }
 .swiper .swiper-container .swiper-pagination:hover {
   background: rgba(0, 0, 0, .5);
