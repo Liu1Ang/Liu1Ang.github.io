@@ -10,6 +10,7 @@
   <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="js/jquery-migrate-1.0.0.js"></script>
   <script src="js/swiper-3.3.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript" charset="utf-8" src="js/ckplayer.js?t=20211108"></script>
 </head>
 <body>
 <!-- top -->
@@ -119,8 +120,30 @@
         <h2>视频简介</h2>
       </div>
       <div class="details">
-        <div></div>
-        <div></div>
+        <div class="video-box">
+          <div id="playerBox1"></div>
+          <script type="text/javascript">
+              var videoObject = {
+                  container: '#playerBox1', //“#”代表容器的ID，“.”或“”代表容器的class
+                  variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
+                  autoplay: false,//是否自动播放
+                  video: 'video/sy_video1.mp4'//视频地址
+              };
+              var player = new ckplayer(videoObject);//初始化播放器
+          </script>
+        </div>
+        <div class="video-box">
+          <div id="playerBox2"></div>
+          <script type="text/javascript">
+              var videoObject = {
+                  container: '#playerBox2', //“#”代表容器的ID，“.”或“”代表容器的class
+                  variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
+                  autoplay: false,//是否自动播放
+                  video: 'video/sy_video2.mp4'//视频地址
+              };
+              var player = new ckplayer(videoObject);//初始化播放器
+          </script>
+        </div>
       </div>
     </div>
   </div>
