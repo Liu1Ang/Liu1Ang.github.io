@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,27 +122,27 @@
       </div>
       <div class="details">
         <div class="video-box">
-          <div id="playerBox1"></div>
+          <div id="playerBox2"></div>
           <script type="text/javascript">
-              var videoObject = {
-                  container: '#playerBox1', //“#”代表容器的ID，“.”或“”代表容器的class
-                  variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
-                  autoplay: false,//是否自动播放
-                  video: 'video/sy_video1.mp4'//视频地址
-              };
-              var player = new ckplayer(videoObject);//初始化播放器
+            var videoObject = {
+              container: '#playerBox2', //“#”代表容器的ID，“.”或“”代表容器的class
+              variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
+              autoplay: false,//是否自动播放
+              video: 'video/sy_video2.mp4'//视频地址
+            };
+            var player = new ckplayer(videoObject);//初始化播放器
           </script>
         </div>
         <div class="video-box">
-          <div id="playerBox2"></div>
+          <div id="playerBox1"></div>
           <script type="text/javascript">
-              var videoObject = {
-                  container: '#playerBox2', //“#”代表容器的ID，“.”或“”代表容器的class
-                  variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
-                  autoplay: false,//是否自动播放
-                  video: 'video/sy_video2.mp4'//视频地址
-              };
-              var player = new ckplayer(videoObject);//初始化播放器
+            var videoObject = {
+              container: '#playerBox1', //“#”代表容器的ID，“.”或“”代表容器的class
+              variable: 'player', //播放函数名称，该属性必需设置，值等于下面的new ckplayer()的对象
+              autoplay: false,//是否自动播放
+              video: 'video/sy_video1.mp4'//视频地址
+            };
+            var player = new ckplayer(videoObject);//初始化播放器
           </script>
         </div>
       </div>
@@ -202,19 +203,19 @@
 </div>
 
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true
-    });
+  var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30,
+    loop: true
+  });
 
-    $('.nav ul li').on('click',function () {
-        $(this).find('a').addClass('on').parents('li').siblings().find('a').removeClass('on');
-    })
+  $('.nav ul li').on('click',function () {
+    $(this).find('a').addClass('on').parents('li').siblings().find('a').removeClass('on');
+  })
 </script>
 </body>
 </html>
